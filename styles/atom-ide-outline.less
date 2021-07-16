@@ -36,12 +36,6 @@
     @padding-h: 10px;
     @padding-v: 2px;
 
-    // same font as editor
-    .font-common() {
-      font-size: var(--editor-font-size);
-      line-height: var(--editor-line-height);
-    }
-
     --editor-tab-length: 4; // default
     --level-indent-size: 16px;
     --indent-level: 0; // initial
@@ -50,8 +44,6 @@
       contain: @contain_except_size;
       list-style-type: none;
       padding: 0;
-
-      .font-common();
 
       li > span {
         contain: @contain_except_size;
@@ -210,7 +202,6 @@
       contain: @contain_except_size;
       list-style-type: none;
       padding: @padding-v @padding-h;
-      .font-common();
       color: #71844c;
     }
 
