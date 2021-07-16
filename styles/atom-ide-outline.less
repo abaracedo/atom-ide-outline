@@ -18,6 +18,7 @@
 .atom-ide-outline {
   display: flex;
   flex-direction: column;
+  font-family: var(--editor-font-family);
 
   .outline-content {
     contain: @contain_except_size;
@@ -38,7 +39,6 @@
     // same font as editor
     .font-common() {
       font-size: var(--editor-font-size);
-      font-family: var(--editor-font-family);
       line-height: var(--editor-line-height);
     }
 
