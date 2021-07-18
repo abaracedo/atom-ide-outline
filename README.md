@@ -8,10 +8,6 @@ Fuzzy search in the outline tree powered by [Zadeh](https://github.com/atom-comm
 
 ![filterer](./images/filter.png)
 
-Reveal the current cursor in the outline
-
-![reveal cursor](./images/between.png)
-
 ## Getting started
 
 1. Install `atom-ide-outline` in Atom
