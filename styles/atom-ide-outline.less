@@ -39,15 +39,13 @@
       padding: 0;
 
       li > span {
-        contain: @contain_except_size;
-        display: inline-block;
-        width: 100%;
-        padding: @padding-v @padding-h;
+        display: flex;
+        align-items: center;
+        padding-top: @padding-v;
+        padding-bottom: @padding-v;
+        padding-left: ~"calc(2px + var(--level-indent-size) * var(--indent-level))";
         white-space: nowrap;
 
-        padding-left: ~"calc(var(--editor-tab-length) * var(--level-indent-size) * var(--indent-level) + @{padding-h} + @{fold-width})";
-
-        // highlight on hover
         &:hover {
           contain: @contain_except_size;
           cursor: pointer;
