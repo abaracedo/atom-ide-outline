@@ -30,7 +30,6 @@ export class OutlineView {
     this.element = document.createElement("div")
     this.element.classList.add("atom-ide-outline")
 
-    this.element.appendChild(makeOutlineToolbar())
     this.element.appendChild(this.createSearchBar())
 
     this.outlineContent = document.createElement("div")
@@ -323,22 +322,6 @@ function hasEqualContent(ot1: OutlineTree[], ot2: OutlineTree[]) {
     }
   }
   return true
-}
-
-function makeOutlineToolbar() {
-  const toolbar = document.createElement("span")
-  toolbar.className = "outline-toolbar"
-
-  const revealCursorButton = document.createElement("button")
-  revealCursorButton.innerHTML = "Reveal Cursor"
-  revealCursorButton.className = "btn outline-btn"
-
-  revealCursorButton.addEventListener("click", () =>
-    atom.commands.dispatch(atom.views.getView(atom.workspace), "outline:reveal-cursor")
-  )
-
-  toolbar.appendChild(revealCursorButton)
-  return toolbar
 }
 
 function createLargeFileElement() {
